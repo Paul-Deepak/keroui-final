@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<!-- FINAL CODE  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div>
+                <h2
+                    style="margin-left: 20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight:500;">
+                    <span style="color:rgba(255, 255, 255, 0.523) ;">Kero</span><span
+                        style="color: rgba(255, 255, 255, 0.29);">UI</span>
+                </h2>
+            </div>
+            <div><button class="openbtn" onclick="openNav()" ;> ☰ </button><button class="morebtn" id="morebtn"
+                    style="background-color: rgb(191, 81, 37);"> <i class="fa fa-ellipsis-v"
+                        style="color: white;"></i></button> </div>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <div class="searchbar"><img src="topnav-icon4.png">
+                    &nbsp;
+                    <input type="text" placeholder="Search.." id="textbox"> &nbsp;&nbsp;
+                </div>
+                <div>
+                    <img src="topnav-icon1.png">
+                    &nbsp;
+
+                    <img src="topnav-icon2.png">
+                    &nbsp;
+                </div>
+                <img src="topnav-icon3.png">
+
+
+            </div>
+
+        </div>
+        <div class="left" id="lcontainer" onmouseenter="sidepanelopen()" onmouseleave="sidepanelclose()">
+            <button class="openbtn" onclick="openNav()" ;> X </button>
+            <hr>
+
+            <div class="lcontents">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--ROCKET ICON-->
+                    <path
+                        d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2v82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9V380.8c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                </svg>
+
+                <i class="fa fa-newspaper-o"></i>
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--APP ICON -->
+                    <path
+                        d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z" />
+                </svg>
+            </div>
+            <hr>
+            <div class="lcontents">
+                <i class="fa fa-diamond"></i>
+
+                <i class="fa fa-car"></i>
+
+                <i class="fa fa-desktop"></i>
+            </div>
+            <hr>
+            <div class="lcontents">
+                <i class="fa fa-pie-chart"></i>
+                <i class="fa fa-dribbble"></i>
+                <i class="fa fa-cube"></i>
+            </div>
+            <hr>
+            <div class="lcontents">
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-gamepad"></i>
+            </div>
+            <hr>
+        </div>
+        <div id="mySidebar" class="sidebar">
+
+
+            <div class="sidebarheader"><span style="color:rgb(252, 106, 53);">Kero</span><span
+                    style="color:firebrick;">UI</span>
+                <button class="closebtn" onclick="closeNav()">☰</button>
+            </div>
+            <hr>
+            <div class="sidebarcontents">
+                <span class="category">MENU</span>
+                <div class="menu"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--ROCKET ICON-->
+                            <path
+                                d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2v82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9V380.8c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
+                        </svg>&nbsp;&nbsp;Dashboards</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#">
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li>Helpdesk</li>
+                    </a>
+                    <a href="#">
+                        <li>Monitoring</li>
+                    </a>
+                    <a href="#">
+                        <li>Crytocurrency</li>
+                    </a>
+                    <a href="#">
+                        <li>Project Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Product</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-newspaper-o"></i>&nbsp;&nbsp;Pages</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Login</li>
+                    </a>
+                    <a href="#">
+                        <li>Login Boxed</li>
+                    </a>
+                    <a href="#">
+                        <li>Register</li>
+                    </a>
+                    <a href="#">
+                        <li>Register Boxed</li>
+                    </a>
+                    <a href="#">
+                        <li>Forgot Password</li>
+                    </a>
+                    <a href="#">
+                        <li>Forgot Password Boxed</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--APP ICON-->
+                            <path
+                                d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z" />
+                        </svg>&nbsp;&nbsp;Applications</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Mailbox</li>
+                    </a>
+                    <a href="#">
+                        <li>Chat</li>
+                    </a>
+                    <a href="#">
+                        <li>FAQ Section</li>
+                    </a>
+                </ul>
+                <span class="category">UI COMPONENTS</span>
+                <div class="menu"><span><i class="fa fa-diamond"></i>&nbsp;&nbsp;Elements</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li>Helpdesk</li>
+                    </a>
+                    <a href="#">
+                        <li>Monitoring</li>
+                    </a>
+                    <a href="#">
+                        <li>Crytocurrency</li>
+                    </a>
+                    <a href="#">
+                        <li>Project Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Product</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-car"></i>&nbsp;&nbsp;Components</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-desktop"></i>&nbsp; &nbsp;Widgets</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#">
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <span class="category">DASHBOARD WIDGETS</span>
+                <div class="menu"><span><i class="fa fa-pie-chart"></i>&nbsp; &nbsp;Chart Boxes 1</span><span>v</span>
+                </div>
+                <ul class="submenu">
+                    <a href="#">
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-dribbble"></i>&nbsp;&nbsp;Chart Boxes 2</span><span>v</span>
+                </div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-cube"></i>&nbsp; &nbsp;Chart Boxes 3</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-id-card-o"></i>&nbsp; &nbsp;Profile Boxes</span><span>v</span>
+                </div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li>Helpdesk</li>
+                    </a>
+                </ul>
+                <span class="category">FORMS</span>
+                <div class="menu"><span><i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp;Elements</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li>Helpdesk</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class="fa fa-gamepad"></i>&nbsp; &nbsp;Widgets</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                    <a href="#">
+                        <li>Helpdesk</li>
+                    </a>
+                </ul>
+                <span class="category">CHARTS</span>
+                <div class="menu"><span><i class=""></i>ChartJS</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class=""></i>Apex Charts</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Advertisement</li>
+                    </a>
+                </ul>
+                <div class="menu"><span><i class=""></i>Chart Sparklines</span><span>v</span></div>
+                <ul class="submenu">
+                    <a href="#" style>
+                        <li>Analytics</li>
+                    </a>
+                    <a href="#">
+                        <li>Management</li>
+                    </a>
+                    <a href="#">
+                        <li>Statistics</li>
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="rightcontainer" id="rcontainer">
+            <div class="right1">
+                <div class="right1text">
+                    <h3 style="margin: 0px;">Analytics</h3>
+                    <p style="color: grey;">This is an example dashboard created using build-in elements and components.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="right1icon1" id="r1i1">
+                    <div class="searchbar"><img src="topnav-icon4.png">
+                        &nbsp;
+                        <input type="text" placeholder="Search.." id="textbox"> &nbsp;&nbsp;
+                    </div>
+                    <hr>
+                    <div>
+                        <img src="topnav-icon1.png">
+                        &nbsp;
+
+                        <img src="topnav-icon2.png">
+                        &nbsp;
+                    </div>
+                    <hr>
+                    <img src="topnav-icon3.png">
+                </div>
+            </div>
+            <div class="right2">
+                <div class="right2icon1">
+                    <i class="fa fa-align-left"></i>&nbsp;<a> Show page menu</a>
+                </div>
+                <div class="right2inbetween">
+                    <a style="color: orangered;font-weight: 500;"> Overview </a>
+                    &nbsp;
+                    <a> Audiences</a>
+                    &nbsp;
+                    <a> Demographics </a>
+                    &nbsp;
+                    <a> More </a>
+                </div>
+                <div class="right2icon2">
+                    <a>Show right drawer &nbsp;</a><i class="fa fa-align-right"></i>
+                </div>
+            </div>
+            <br><br>
+            <div class="right3">
+                <header class="right3header1">
+                    <span class="titlestyle"> Portfolio Performance </span>
+                    <div><button class="b1">View All</button></div>
+                </header>
+
+                <div class="right3sec2">
+
+                    <div class="right3sec2div1">
+                        <div class="right3sec2div1_left1">
+                            <div>
+                                <i class="fa fa-credit-card"
+                                    style="font-size:48px;color:rgb(255, 174, 0);padding-top: 10px;"></i>
+                            </div>
+                            <div style="padding-left: 15px;">
+                                <span class="firstline">Cash Deposits</span>
+                                <p style="font-size: 48px;"><b>1,7M</b></p>
+                                <p><span style="color: rgb(235, 27, 65);font-weight: 500;">54.1%</span> less earnings
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right3sec2div1">
+
+                        <div class="right3sec2div1_left2"
+                            style="display: flex;flex-direction: row;align-items: center;">
+                            <div>
+                                <i class="fa fa-graduation-cap" style="font-size:48px;color:red;padding-top: 10px;"></i>
+                            </div>
+                            <div style="padding-left: 15px;">
+                                <span class="firstline">Invested Dividends</span>
+                                <p style="font-size: 48px;"><b>9M</b></p>
+                                <p>Grow Rate: <span style="color: rgb(42, 173, 234);font-weight: 500;">14.1%</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="right3sec2div1">
+                        <div class="right3sec2div1_left3"
+                            style="display: flex;flex-direction: row;align-items: center;">
+                            <div>
+                                <i class="fa fa-line-chart"
+                                    style="font-size:48px;color:rgb(10, 174, 10);padding-top: 10px;"></i>
+                            </div>
+                            <div style="padding-left: 15px;">
+                                <span class="firstline"> Capital Gains</span>
+                                <p style="font-size: 48px; color: rgb(10,174,10);"><b>$563</b></p>
+                                <p>Increased by<span style="color: rgb(255, 196, 0);font-weight: 500;"> 7.35%</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="right3section3">
+                    <div>
+                        <button class="r3btn">View Complete Report</button>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <div class="right4sec1">
+                <header class="right4header1">
+                    <h3><img src="icon5.png" width="25px" height="25px">&nbsp; Tasks List</h3>
+                    <button>☰</button>
+                </header>
+                <div class="right4contents">
+                    <div class="right4content1">
+                        <div id="chkbx"><input type="checkbox" class="chkbx"></div>
+                        <div class="r4c1p1">
+                            <h4>Wash the car</h4><span class="description"><i>Written by Bob</i></span>
+                        </div><span class="status">REJECTED</span>
+                    </div>
+                    <hr>
+                    <div class="right4content2">
+                        <div id="chkbx"><input type="checkbox" class="chkbx"></div>
+                        <div class="r4c1p1">
+                            <h4>Task with dropdown menu</h4><span class="description">By Johnny</span>
+                        </div><span class="status">NEW</span>
+                    </div>
+                    <hr>
+                    <div class="right4content3">
+                        <div id="chkbx"><input type="checkbox" class="chkbx"></div>
+                        <div class="r4c1p1">
+                            <h4>Badge on the right task</h4><span class="description">This task has show on hover
+                                actions!</span>
+                        </div><span class="status">LATEST TASK</span>
+                    </div>
+                    <hr>
+                    <div class="right4content4">
+                        <div id="chkbx"><input type="checkbox" class="chkbx"></div>
+                        <div class="r4c1p1">
+                            <h4>Development Task</h4><span class="description">Finish React ToDo List App</span>
+                        </div><span class="status">69</span>
+                    </div>
+                    <hr>
+                    <div class="right4content1">
+                        <div id="chkbx"><input type="checkbox" class="chkbx"></div>
+                        <div class="r4c1p1">
+                            <h4>Wash the car</h4><span class="description"><i>Written by Bob</i></span>
+                        </div><span class="status">REJECTED</span>
+                    </div>
+                    <hr>
+                </div>
+                <footer class="right4footer1">
+                    <a>Cancel</a> &nbsp;
+                    <button class="addtaskbtn">Add Task</button>
+                </footer>
+
+            </div>
+
+            <div class="right5">
+                <div class="right5sec1">
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Total orders</span>
+                                <span class="secondline">Last Year Expenses</span>
+                            </div>
+                            <span class="values" style="color: rgb(0, 186, 0);">1896</span>
+                        </div>
+                    </div>
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Followers</span>
+                                <span class="secondline">People Interested</span>
+                            </div>
+                            <span class="values" style="color: rgb(215, 0, 0);">45,9%</span>
+                        </div>
+                    </div>
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Total orders</span>
+                                <span class="secondline">Last Year Expenses</span>
+                            </div>
+                            <span class="values" style="color: rgb(0, 186, 0);">1896</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right5sec1">
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Clients</span>
+                                <span class="secondline">Total Client Profits</span>
+                            </div>
+                            <span class="values" style="color: orangered;">$12.6k</span>
+                        </div>
+                    </div>
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Products Sold</span>
+                                <span class="secondline">Total Revenue streams</span>
+                            </div>
+                            <span class="values" style="color: rgb(255, 196, 0);">$3M</span>
+                        </div>
+                    </div>
+                    <div class="r5s1p1">
+                        <div class="r5s1p1a1">
+                            <div class="r5s1line2">
+                                <span class="firstline">Clients</span>
+                                <span class="secondline">Total Client Profits</span>
+                            </div>
+                            <span class="values" style="color: orangered;">$12.6k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="spinnerbtn">
+                <i class="fa fa-refresh"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+
+
+    <script>
+        const menus = document.querySelectorAll('.menu');
+        menus.forEach(menu => {
+            menu.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        });
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("mySidebar").style.visibility = "visible";
+            document.getElementById("rcontainer").style.marginLeft = "190px";
+            document.getElementById("rcontainer").style.width = "calc(100%-200px)";
+            document.getElementById("lcontainer").style.visibility = "hidden";
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0px";
+            document.getElementById("mySidebar").style.visibility = "hidden";
+            document.getElementById("rcontainer").style.width = "calc(100%)";
+            document.getElementById("rcontainer").style.marginLeft = "0px";
+            document.getElementById("lcontainer").style.visibility = "visible";
+        }
+
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("morebtn");
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <!-- SCRIPT -->
+
+</body>
+
+</html>
