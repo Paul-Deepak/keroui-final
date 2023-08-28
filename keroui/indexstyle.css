@@ -47,6 +47,12 @@ button {
   }
 }
 
+.header h2 {
+  margin-left: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -275,7 +281,7 @@ ul li::before {
 }
 
 
-.right1icon1 {
+.first-section-icons {
   padding: 0px;
   display: flex;
   display: flex;
@@ -292,7 +298,7 @@ ul li::before {
   }
 }
 
-.right1icon1 img {
+.first-section-icons img {
   width: 50px;
   height: 40px;
   padding: 0px 10px;
@@ -303,7 +309,7 @@ ul li::before {
   padding-right: 20px;
 }
 
-.right2inbetween {
+.options-content-mid {
   display: flex;
   flex: 0.5;
   justify-content: space-between;
@@ -311,36 +317,37 @@ ul li::before {
   /* position: relative; */
 }
 
-.right2icon1 {
+.options-content-left {
   padding-left: 20px;
   color: grey;
 }
 
-.right2icon1 i,
-.right2icon2 i {
+.options-content-left i,
+.options-content-right i {
   opacity: 0.5;
 }
 
-.right2icon1 a:hover,
-.right2icon2 a:hover {
+.options-content-left a:hover,
+.options-content-right a:hover {
   cursor: pointer;
   color: black;
 }
 
-.right2inbetween a {
+.options-content-mid a {
   position: relative;
 }
 
-.right2inbetween a:hover {
+.options-content-mid a:hover {
   color: orangered;
   font-weight: 500;
+  cursor: pointer;
 }
 
-.right2inbetween a:hover::after {
+.options-content-mid a:hover::after {
   width: 10px;
 }
 
-.right2inbetween a::after {
+.options-content-mid a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -396,22 +403,22 @@ ul li::before {
   background-color: orangered;
 }
 
-.right1 {
+.first-section {
   display: flex;
   justify-content: space-between;
   padding-top: 12px;
 }
 
-.right1text h3 {
+.first-section-text h3 {
   margin: 0px;
 }
 
-.right1text p {
+.first-section-text p {
   color: grey;
 }
 
 
-.right2 {
+.options {
   height: 40px;
   width: 100%;
   background-color: white;
@@ -424,12 +431,12 @@ ul li::before {
   box-shadow: 2px grey;
 }
 
-.right2icon2 {
+.options-content-right {
   padding-right: 20px;
   color: grey;
 }
 
-.right3 {
+.portfolio-performance-card {
   height: 270px;
   width: 100%;
   background-color: white;
@@ -438,7 +445,7 @@ ul li::before {
   border-radius: 8px;
 }
 
-.right3header1 {
+.pp-card-header {
   padding: 10px 20px;
   height: 45px;
   display: flex;
@@ -469,12 +476,12 @@ ul li::before {
   color: white;
 }
 
-.right3sec2 {
+.pp-card-contents {
   display: flex;
   flex-direction: row;
 }
 
-.right3sec2div1 {
+.pp-card-contents-div {
 
   padding-top: 20px;
   padding-bottom: 20px;
@@ -491,7 +498,7 @@ ul li::before {
   }
 }
 
-.right3sec2div1 i {
+.pp-card-contents-div i {
   font-size: 48px;
   padding-top: 10px;
 }
@@ -500,13 +507,13 @@ ul li::before {
   padding-left: 15px;
 }
 
-.right3sec2div1_left1 {
+.pp-card-contents-div-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.right3section3 {
+.pp-card-footer {
   margin: auto;
   height: 40px;
   padding: 10px;
@@ -516,7 +523,7 @@ ul li::before {
   align-items: center;
 }
 
-.r3btn {
+.view-report {
   background-color: orangered;
   border: none;
   color: white;
@@ -531,11 +538,11 @@ ul li::before {
   height: 35px;
 }
 
-.r3btn:hover {
+.view-report:hover {
   background-color: rgb(255, 17, 0);
 }
 
-.right4sec1 {
+.tasks-card {
   width: 100%;
   height: 470px;
   background-color: white;
@@ -545,7 +552,7 @@ ul li::before {
   box-shadow: 2px grey;
 }
 
-.right4header1 {
+.tasks-card-header {
   padding: 10px 20px;
   height: 45px;
   display: flex;
@@ -555,7 +562,31 @@ ul li::before {
   border-color: rgba(197, 191, 191, 0.708);
 }
 
-.right4content1 {
+.tasks-card-contents {
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  overflow-y: scroll;
+  height: 355px;
+  width: 97%;
+  justify-content: space-between;
+
+}
+
+.tasks-card-content1 {
+  height: 70px;
+}
+
+.tasks-card-contents::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tasks-card-contents::-webkit-scrollbar-thumb {
+  background-color: rgb(188, 188, 200);
+  border-radius: 20px;
+}
+
+.tasks-card-content1 {
   margin: 20px 10px;
   display: flex;
   align-items: center;
@@ -579,7 +610,7 @@ ul li::before {
   }
 }
 
-.right4content2 {
+.tasks-card-content2 {
   margin: 20px 10px;
   display: flex;
   align-items: center;
@@ -603,7 +634,7 @@ ul li::before {
   }
 }
 
-.right4content3 {
+.tasks-card-content3 {
   margin: 20px 10px;
   display: flex;
   align-items: center;
@@ -627,7 +658,7 @@ ul li::before {
   }
 }
 
-.right4content4 {
+.tasks-card-content4 {
   margin: 20px 10px;
   display: flex;
   align-items: center;
@@ -650,7 +681,7 @@ ul li::before {
   }
 }
 
-.right4content5 {
+.tasks-card-content5 {
   margin: 20px 10px;
   display: flex;
   align-items: center;
@@ -684,12 +715,12 @@ ul li::before {
   cursor: pointer;
 }
 
-.r4c1p1 {
+.tasks-card-contents-flex {
   display: flex;
   flex-direction: column;
 }
 
-.right4footer1 {
+.tasks-card-footer {
   height: 50px;
   padding-right: 20px;
   float: right;
@@ -707,36 +738,13 @@ ul li::before {
   }
 }
 
-.right4footer1 a:hover {
+.tasks-card-footer a:hover {
   cursor: pointer;
   border-bottom: solid 1px;
 }
 
-.right4contents {
-  top: 0;
-  left: 0;
-  padding: 0px 10px;
-  overflow-y: scroll;
-  height: 355px;
-  width: 97%;
-  justify-content: space-between;
 
-}
-
-.right4content1 {
-  height: 70px;
-}
-
-.right4contents::-webkit-scrollbar {
-  width: 5px;
-}
-
-.right4contents::-webkit-scrollbar-thumb {
-  background-color: rgb(188, 188, 200);
-  border-radius: 20px;
-}
-
-.right5 {
+.stat-card {
   margin-top: 30px;
   width: 100%;
   height: 150px;
@@ -750,7 +758,7 @@ ul li::before {
   margin-bottom: 20px;
 }
 
-.right5sec1 {
+.stat-card-sections {
   width: 100%;
   height: 50%;
   background-color: rgb(255, 255, 255);
@@ -761,7 +769,7 @@ ul li::before {
   border-color: rgba(197, 191, 191, 0.708);
 }
 
-.r5s1p1 {
+.stat-card-divisions {
   padding: 20px;
   background-color: white;
   display: flex;
@@ -776,13 +784,13 @@ ul li::before {
   }
 }
 
-.r5s1p1a1 {
+.stat-card-divisions-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.r5s1line2 {
+.stat-card-divisions-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

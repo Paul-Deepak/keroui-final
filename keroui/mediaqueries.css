@@ -39,7 +39,7 @@
     margin-top: 70px;
   }
 
-  .right1icon1 {
+  .first-section-icons {
     display: none;
   }
 
@@ -52,7 +52,7 @@
     background-color: #fbf5f5;
   }
 
-  .right4sec1 {
+  .tasks-card {
     width: 100%;
   }
 
@@ -63,6 +63,9 @@
 
 /* Tablet */
 @media only screen and (max-width: 767px) {
+  .container{
+    width: 100%;
+  }
   .header {
     display: flex;
     flex-direction: row;
@@ -80,7 +83,7 @@
     margin-top: 70px;
   }
 
-  .right1icon1 {
+  .first-section-icons {
     display: none;
   }
 
@@ -93,22 +96,22 @@
     background-color: #fbf5f5;
   }
 
-  .right2 {
+  .options {
     width: 100%;
     height: fit-content;
   }
 
-  .right2icon1 a,
-  .right2icon2 a {
+  .options-content-left a,
+  .options-content-right a {
     display: none;
   }
 
-  .right2icon1 i,
-  .right2icon2 i {
+  .options-content-left i,
+  .options-content-right i {
     display: block;
   }
 
-  .right3header1 {
+  .pp-card-header {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -116,31 +119,31 @@
     align-items: center;
   }
 
-  .right3 {
+  .portfolio-performance-card {
     height: fit-content;
   }
 
-  .right3sec2 {
+  .pp-card-contents {
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
 
-  .right2inbetween {
+  .options-content-mid {
     flex-direction: column;
     text-align: center;
   }
 
-  .right4sec1 {
+  .tasks-card {
     width: 100%;
 
-    .right4header1 {
+    .tasks-card-header {
       flex-direction: column;
       align-items: center;
       height: fit-content;
     }
 
-    .right4header1 img {
+    .tasks-card-header img {
       display: none;
     }
 
@@ -150,11 +153,11 @@
     display: none;
   }
 
-  .right5 {
+  .stat-card {
     height: fit-content;
   }
 
-  .right5sec1 {
+  .stat-card-sections {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -167,6 +170,7 @@
   .header {
     display: flex;
     flex-direction: row;
+    width: 100%;
 
     .morebtn {
       display: inline-block;
@@ -181,7 +185,7 @@
     margin-top: 70px;
   }
 
-  .right1icon1 {
+  .first-section-icons {
     display: none;
   }
 
@@ -194,22 +198,22 @@
     background-color: #fbf5f5;
   }
 
-  .right2 {
+  .options {
     width: 100%;
     height: fit-content;
   }
 
-  .right2icon1 a,
-  .right2icon2 a {
+  .options-content-left a,
+  .options-content-right a {
     display: none;
   }
 
-  .right2icon1 i,
-  .right2icon2 i {
+  .options-content-left i,
+  .options-content-right i {
     display: block;
   }
 
-  .right3header1 {
+  .pp-card-header {
     height: fit-content;
     width: 100%;
     display: flex;
@@ -217,31 +221,31 @@
     align-items: center;
   }
 
-  .right3 {
+  .portfolio-performance-card {
     height: fit-content;
   }
 
-  .right3sec2 {
+  .pp-card-contents {
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
 
-  .right2inbetween {
+  .options-content-mid {
     flex-direction: column;
     text-align: center;
   }
 
-  .right4sec1 {
+  .tasks-card {
     width: 100%;
 
-    .right4header1 {
+    .tasks-card-header {
       flex-direction: column;
       align-items: center;
       height: fit-content;
     }
 
-    .right4header1 img {
+    .tasks-card-header img {
       display: none;
     }
 
@@ -251,11 +255,11 @@
     display: none;
   }
 
-  .right5 {
+  .stat-card {
     height: fit-content;
   }
 
-  .right5sec1 {
+  .stat-card-sections {
     height: fit-content;
     display: flex;
     flex-direction: column;
