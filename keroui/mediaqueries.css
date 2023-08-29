@@ -1,11 +1,11 @@
 /* Laptop L*/
-@media only screen and (max-width: 1249px) {
+@media only screen and (max-width: 1249px) and (min-width:991px) {
   .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     .morebtn {
       display: none;
     }
@@ -17,14 +17,19 @@
 
   .rightcontainer {
     margin-top: 70px;
+    width: 100%;
   }
+
 }
 
 /* Laptop */
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) and (min-width:768px) {
   .header {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 
     .morebtn {
       display: inline-block;
@@ -37,6 +42,7 @@
 
   .rightcontainer {
     margin-top: 70px;
+    width: 100%;
   }
 
   .first-section-icons {
@@ -62,13 +68,14 @@
 }
 
 /* Tablet */
-@media only screen and (max-width: 767px) {
-  .container{
-    width: 100%;
-  }
+@media only screen and (max-width: 768px) and (min-width:425px){
+  
   .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     .morebtn {
       display: inline-block;
@@ -81,6 +88,7 @@
 
   .rightcontainer {
     margin-top: 70px;
+    width: 100%;
   }
 
   .first-section-icons {
@@ -113,7 +121,6 @@
 
   .pp-card-header {
     height: fit-content;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +139,10 @@
   .options-content-mid {
     flex-direction: column;
     text-align: center;
+  }
+  .view-report {
+    width: auto;
+    height: fit-content;
   }
 
   .tasks-card {
@@ -171,6 +182,8 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
 
     .morebtn {
       display: inline-block;
@@ -183,6 +196,7 @@
 
   .rightcontainer {
     margin-top: 70px;
+    width: calc(100% - 40px);
   }
 
   .first-section-icons {
@@ -194,12 +208,15 @@
     justify-content: space-between;
     z-index: 2;
     position: fixed;
-    width: 100%;
+    width: auto;
     background-color: #fbf5f5;
   }
-
+  .view-report {
+    width: auto;
+    height: fit-content;
+  }
   .options {
-    width: 100%;
+    width: auto;
     height: fit-content;
   }
 
@@ -215,7 +232,6 @@
 
   .pp-card-header {
     height: fit-content;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -237,8 +253,10 @@
   }
 
   .tasks-card {
-    width: 100%;
-
+    .tasks-card-contents{
+      width: auto;
+    
+    }
     .tasks-card-header {
       flex-direction: column;
       align-items: center;

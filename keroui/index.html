@@ -18,8 +18,7 @@
         <div class="header">
             <div>
                 <h2>
-                    <span style="color:rgba(255, 255, 255, 0.523) ;">Kero</span>
-                    <span style="color: rgba(255, 255, 255, 0.29);">UI</span>
+                    <span style="color:rgba(255, 255, 255, 0.523) ;">Kero</span><span style="color: rgba(255, 255, 255, 0.29);">UI</span>
                 </h2>
             </div>
             <div>
@@ -415,7 +414,7 @@
 
             <div class="tasks-card">
                 <header class="tasks-card-header">
-                    <h3><img src="icon5.png" width="25px" height="25px">&nbsp; Tasks List</h3>
+                    <div class="header-align"><img src="icon5.png" width="25px" height="25px">&nbsp;<span class="header-text"> Tasks List</span></div>
                     <button>☰</button>
                 </header>
                 <div class="tasks-card-contents">
@@ -425,14 +424,14 @@
                             <h4>Wash the car</h4><span class="description"><i>Written by Bob</i></span>
                         </div><span class="status">REJECTED</span>
                     </div>
-                    <hr>
+                    <hr class="tasks-ruler">
                     <div class="tasks-card-content2">
                         <div id="chkbx"><input type="checkbox" class="chkbx"></div>
                         <div class="tasks-card-contents-flex">
                             <h4>Task with dropdown menu</h4><span class="description">By Johnny</span>
                         </div><span class="status">NEW</span>
                     </div>
-                    <hr>
+                    <hr class="tasks-ruler">
                     <div class="tasks-card-content3">
                         <div id="chkbx"><input type="checkbox" class="chkbx"></div>
                         <div class="tasks-card-contents-flex">
@@ -440,7 +439,7 @@
                                 actions!</span>
                         </div><span class="status">LATEST TASK</span>
                     </div>
-                    <hr>
+                    <hr class="tasks-ruler">
                     <div class="tasks-card-content4">
                         <div id="chkbx"><input type="checkbox" class="chkbx"></div>
                         <div class="tasks-card-contents-flex">
@@ -549,7 +548,7 @@
             document.getElementById("mySidebar").style.width = "0px";
             document.getElementById("mySidebar").style.visibility = "hidden";
             document.getElementById("rcontainer").style.width = "calc(100%)";
-            document.getElementById("rcontainer").style.marginLeft = "0px";
+            document.getElementById("rcontainer").style.marginLeft = "20px";
             document.getElementById("lcontainer").style.visibility = "visible";
         }
 

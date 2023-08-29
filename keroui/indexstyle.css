@@ -148,7 +148,7 @@ button {
   z-index: 1;
   background-color: white;
   overflow-x: hidden;
-  transition: 0.2s;
+  transition: 0.1s;
   display: block;
   margin: 25px;
   visibility: hidden;
@@ -206,7 +206,6 @@ button {
   border-bottom: solid 1px;
   border-color: rgba(128, 128, 128, 0.269);
   font-weight: 600;
-  transition: 0.3s ease-in-out;
 }
 
 .sidebarcontents {
@@ -534,7 +533,7 @@ ul li::before {
   font-size: 16px;
   cursor: pointer;
   border-radius: 50px;
-  width: 280px;
+  width: 250px;
   height: 35px;
 }
 
@@ -560,6 +559,14 @@ ul li::before {
   align-items: center;
   border-bottom: solid 1px;
   border-color: rgba(197, 191, 191, 0.708);
+  .header-align{
+    display: flex;
+    align-items: center;
+  }
+  .header-text{
+    color: rgba(0, 0, 0, 0.797);
+    font-size: larger;
+  }
 }
 
 .tasks-card-contents {
@@ -572,7 +579,9 @@ ul li::before {
   justify-content: space-between;
 
 }
-
+.tasks-ruler{
+  width: 100%;
+}
 .tasks-card-content1 {
   height: 70px;
 }
