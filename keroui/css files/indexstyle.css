@@ -559,11 +559,13 @@ ul li::before {
   align-items: center;
   border-bottom: solid 1px;
   border-color: rgba(197, 191, 191, 0.708);
-  .header-align{
+
+  .header-align {
     display: flex;
     align-items: center;
   }
-  .header-text{
+
+  .header-text {
     color: rgba(0, 0, 0, 0.797);
     font-size: larger;
   }
@@ -580,9 +582,11 @@ ul li::before {
   justify-content: space-between;
 
 }
-.tasks-ruler{
+
+.tasks-ruler {
   width: 100%;
 }
+
 .tasks-card-content1 {
   height: 70px;
 }
