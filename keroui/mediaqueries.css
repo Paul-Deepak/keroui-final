@@ -282,4 +282,12 @@
     display: flex;
     flex-direction: column;
   }
+  .modal-content{
+    height: fit-content;
+    padding: 10px;
+  }
+  #textbox{
+    width: 40px;
+    font-size: 12px;
+  }
 }
