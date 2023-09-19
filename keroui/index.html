@@ -76,7 +76,7 @@
         </div>
         <div id="mySidebar" class="sidebar">
 
-            <div class="sidebar-header">
+            <div class="sidebar-header" id="sidebarheader">
                 <span class="sb-header-first">Kero</span>
                 <span class="sb-header-second">UI</span>
                 <button class="close-btn" onclick="closeNav()">☰</button>
@@ -533,6 +533,7 @@
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
             document.getElementById("mySidebar").style.visibility = "visible";
+            document.getElementById("sidebarheader").style.display = "flex";
             document.getElementById("rcontainer").style.marginLeft = "190px";
             document.getElementById("rcontainer").style.width = "calc(100%-200px)";
             document.getElementById("lcontainer").style.visibility = "hidden";
@@ -542,6 +543,7 @@
         function closeNav() {
             document.getElementById("mySidebar").style.width = "0px";
             document.getElementById("mySidebar").style.visibility = "hidden";
+            document.getElementById("sidebarheader").style.display = "none";
             document.getElementById("rcontainer").style.width = "calc(100%)";
             document.getElementById("rcontainer").style.marginLeft = "20px";
             document.getElementById("lcontainer").style.visibility = "visible";
