@@ -50,15 +50,6 @@
     display: none;
   }
 
-  .menu_show {
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    background-color: #fbf5f5;
-  }
-
   .tasks-card {
     width: 100%;
   }
@@ -94,15 +85,6 @@
 
   .first-section-icons {
     display: none;
-  }
-
-  .menu_show {
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    position: fixed;
-    width: 100%;
-    background-color: #fbf5f5;
   }
 
   .options {
@@ -203,15 +185,6 @@
 
   .first-section-icons {
     display: none;
-  }
-
-  .menu_show {
-    display: flex;
-    justify-content: space-between;
-    z-index: 2;
-    position: fixed;
-    width: auto;
-    background-color: #fbf5f5;
   }
 
   .view-report {

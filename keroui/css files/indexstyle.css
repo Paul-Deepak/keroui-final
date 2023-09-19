@@ -45,10 +45,12 @@ button {
     background-color: rgb(191, 81, 37);
     color: white;
   }
-  .more-btn{
+
+  .more-btn {
     background-color: rgb(191, 81, 37);
   }
-  .more-btn i{
+
+  .more-btn i {
     color: white;
   }
 }
@@ -57,10 +59,12 @@ button {
   margin-left: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
-  .header-first-text{
-    color:rgba(255, 255, 255, 0.523) ;
+
+  .header-first-text {
+    color: rgba(255, 255, 255, 0.523);
   }
-  .header-second-text{
+
+  .header-second-text {
     color: rgba(255, 255, 255, 0.29);
   }
 }
@@ -121,7 +125,7 @@ button {
 }
 
 
-.lcontents {
+.l-contents {
   padding: 15px;
   height: 150px;
   background-color: white;
@@ -169,14 +173,17 @@ button {
   border-radius: 8px;
   box-shadow: 0.2px 0.2px 10px 1px rgba(101, 101, 101, 0.457);
 }
-.sidebar-header{
-  .sb-header-first{
-    color:rgb(252, 106, 53);
+
+.sidebar-header {
+  .sb-header-first {
+    color: rgb(252, 106, 53);
   }
-  .sb-header-second{
-    color:firebrick;
+
+  .sb-header-second {
+    color: firebrick;
   }
 }
+
 .menu {
   margin-left: 10px;
   padding-top: 15px;
@@ -192,7 +199,7 @@ button {
   color: rgba(0, 0, 0, 0.895);
 }
 
-.submenu {
+.sub-menu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
@@ -207,7 +214,7 @@ button {
   left: 0;
 }
 
-.menu.active+.submenu {
+.menu.active+.sub-menu {
   max-height: 500px;
 }
 
@@ -239,7 +246,7 @@ button {
   }
 }
 
-.submenu a {
+.sub-menu a {
   padding: 10px 10px 10px 25px;
   text-decoration: none;
   width: 160px;
@@ -332,7 +339,6 @@ ul li::before {
   flex: 0.5;
   justify-content: space-between;
   padding: 10px;
-  /* position: relative; */
 }
 
 .options-content-left {
@@ -530,38 +536,47 @@ ul li::before {
   flex-direction: row;
   align-items: center;
 }
-.fa-credit-card{
-  color:rgb(255, 174, 0);
+
+.fa-credit-card {
+  color: rgb(255, 174, 0);
 }
-.colored-text-cash{
+
+.colored-text-cash {
   color: rgb(235, 27, 65);
   font-weight: 500;
 }
-.bold-text-cash{
+
+.bold-text-cash {
   font-size: 48px;
 }
 
-.fa-graduation-cap{
+.fa-graduation-cap {
   color: red;
 }
-.bold-text-inv{
+
+.bold-text-inv {
   font-size: 48px;
 }
-.colored-text-inv{
+
+.colored-text-inv {
   color: rgb(42, 173, 234);
   font-weight: 500;
 }
-.fa-line-chart{
-  color:rgb(10, 174, 10);
+
+.fa-line-chart {
+  color: rgb(10, 174, 10);
 }
-.bold-text-gains{
-  font-size: 48px; 
-  color: rgb(10,174,10);
+
+.bold-text-gains {
+  font-size: 48px;
+  color: rgb(10, 174, 10);
 }
-.colored-text-gains{
+
+.colored-text-gains {
   color: rgb(255, 196, 0);
   font-weight: 500
 }
+
 .pp-card-footer {
   margin: auto;
   height: 40px;
@@ -614,7 +629,7 @@ ul li::before {
     display: flex;
     align-items: center;
   }
-  
+
 
   .header-text {
     color: rgba(0, 0, 0, 0.797);
@@ -672,6 +687,7 @@ ul li::before {
 
   .description {
     color: rgb(91, 91, 91);
+
   }
 }
 
@@ -709,7 +725,6 @@ ul li::before {
 
   .status {
     background-color: rgb(29, 123, 0);
-    /* box-sizing: border-box; */
     padding: 4px 10px;
     color: white;
     justify-content: end;
@@ -848,18 +863,23 @@ ul li::before {
     padding-right: 20px;
   }
 }
-.red{
+
+.red {
   color: rgb(215, 0, 0);
 }
-.green{
+
+.green {
   color: rgb(0, 186, 0);
 }
-.orangered{
+
+.orangered {
   color: orangered;
 }
-.yellow{
+
+.yellow {
   color: rgb(255, 196, 0);
 }
+
 .stat-card-divisions-flex {
   display: flex;
   flex-direction: row;
