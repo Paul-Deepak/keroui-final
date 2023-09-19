@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .morebtn {
+    .more-btn {
       display: none;
     }
   }
@@ -16,7 +16,7 @@
     display: none;
   }
 
-  .rightcontainer {
+  .right-container {
     margin-top: 70px;
     width: 100%;
   }
@@ -32,7 +32,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .morebtn {
+    .more-btn {
       display: inline-block;
     }
   }
@@ -41,7 +41,7 @@
     display: none;
   }
 
-  .rightcontainer {
+  .right-container {
     margin-top: 70px;
     width: 100%;
   }
@@ -63,7 +63,7 @@
     width: 100%;
   }
 
-  .spinnerbtn {
+  .spinner-btn {
     display: none;
   }
 }
@@ -78,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .morebtn {
+    .more-btn {
       display: inline-block;
     }
   }
@@ -87,7 +87,7 @@
     display: none;
   }
 
-  .rightcontainer {
+  .right-container {
     margin-top: 70px;
     width: 100%;
   }
@@ -162,7 +162,7 @@
 
   }
 
-  .spinnerbtn {
+  .spinner-btn {
     display: none;
   }
 
@@ -187,7 +187,7 @@
     justify-content: space-between;
     align-items: center;
 
-    .morebtn {
+    .more-btn {
       display: inline-block;
     }
   }
@@ -196,7 +196,7 @@
     display: none;
   }
 
-  .rightcontainer {
+  .right-container {
     margin-top: 70px;
     width: calc(100% - 40px);
   }
@@ -274,7 +274,7 @@
 
   }
 
-  .spinnerbtn {
+  .spinner-btn {
     display: none;
   }
 
